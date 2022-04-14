@@ -13,14 +13,12 @@ section,
 div {
   display: block;
 }
+
 body {
   background-color: #212121;
+
 }
-#logo > img {
-  position: relative;
-  top: 28px;
-  left: 26px;
-}
+
 #logo2 > img {
   position: relative;
   top: 28px;
@@ -272,3 +270,157 @@ footer {
   width: 100%;
   background-color: #d6d6d6;
 }
+
+
+/*Layout 3*/
+#wrapper_all3{
+  margin: 0 auto;
+  width : 1000px; 
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+#header_3{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  background-color: #212121;
+
+}
+
+#header_3 div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#button_plus
+{
+  border:none;
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 150px;
+  cursor: pointer ;
+ 
+}
+
+
+#logo_3 {
+align-self: flex-start;
+margin:39px 0px 0px 37px;
+}
+
+#nav_3{
+align-self: flex-end;
+width:100%;
+}
+
+
+#nav_3 > ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+
+}
+
+#nav_3> ul >li {
+  display: table;
+  width:33.33334%; 
+  height: 62px;
+  background-color: #ffcdd2;
+}
+#nav_3> ul >li:hover {
+  display: table;
+  width:33.33334%; 
+  height: 62px;
+  background-color: #fd8f9a;
+}
+
+#nav_3 > ul >li > a{
+  display: table-cell;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  color: #212121;
+  text-align: center;
+  vertical-align: middle;
+  
+}
+
+#selected_3{
+  background-color: #b94a48;
+  color: white;
+  pointer-events: none;
+}
+
+.sqr {
+  background-color: white;
+  height: 50%;
+  width: 50%;
+  flex-direction: column;
+}
+.sqrs_container{
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:column;
+}
+.sqr:nth-of-type(n):hover{
+  background-color: #ffcdd2;
+
+}
+.sqr:nth-of-type(n)
+{
+  opacity: 30%;
+}
+
+.sqr:nth-of-type(2n)
+{
+  opacity: 60%;
+}
+.sqr:nth-of-type(3n)
+{
+  opacity: 80%;
+}
+.sqr:nth-of-type(4n)
+{
+  opacity: 100%;
+}
+#main{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 500px)
+{
+  #wrapper_all3{
+
+    width: 100%;
+  }
+  .sqrs_container{
+    width:100%;
+  }
+
+  #logo_3{
+    align-self: center;
+    margin-left: 0;
+    }
+
+    #header_3{
+      width: 100%;
+      
+    }
+     
+    .sqrs{
+      height: 50%;
+    }
+
+  }
